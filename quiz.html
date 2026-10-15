@@ -1,11 +1,10 @@
 <!DOCTYPE html>
-<html lang="en"
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Yankees Trivia Quiz | Passion for Pinstripes</title>
-  <link rel="stylesheet" href="css/sstyle.css">
-  <script src="js/quiz.js" defer></script>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
@@ -24,8 +23,8 @@
 
   <main>
     <h2>Yankees Trivia Quiz</h2>
-    <p>Consider yourself a Yankee fan? Answer these 5 questions and we'll see if you're a rookie, 
-    all-star, or Hall of Famer!</p>
+    <p>Consider yourself a Yankee fan? Answer these 5 questions and we'll see if you're a Rookie, 
+    All-Star, or Hall of Famer!</p>
 
     <form id="quiz-form">
 
@@ -39,45 +38,90 @@
 
       <fieldset>
         <legend>2. During Aaron Judge's debut, how did he perform during his first at bat?</legend>
-        <label><input type="radio" name="q1" value="a"> Double to right field</label>
-        <label><input type="radio" name="q1" value="b"> Walked after four balls</label>
-        <label><input type="radio" name="q1" value="c"> Struck out</label>
-        <label><input type="radio" name="q1" value="d"> Hit a 446-foot homerun</label>
+        <label><input type="radio" name="q2" value="a"> Double to right field</label>
+        <label><input type="radio" name="q2" value="b"> Walked after four balls</label>
+        <label><input type="radio" name="q2" value="c"> Struck out</label>
+        <label><input type="radio" name="q2" value="d"> Hit a 446-foot homerun</label>
       </fieldset>
 
       <fieldset>
         <legend>3. Who made their debut with the Yankees in 1920?</legend>
-        <label><input type="radio" name="q1" value="a"> Lou Gehrig</label>
-        <label><input type="radio" name="q1" value="b"> Babe Ruth</label>
-        <label><input type="radio" name="q1" value="c"> Joe DiMaggio</label>
-        <label><input type="radio" name="q1" value="d"> Mickey Mantle</label>
+        <label><input type="radio" name="q3" value="a"> Lou Gehrig</label>
+        <label><input type="radio" name="q3" value="b"> Babe Ruth</label>
+        <label><input type="radio" name="q3" value="c"> Joe DiMaggio</label>
+        <label><input type="radio" name="q3" value="d"> Mickey Mantle</label>
       </fieldset>
 
       <fieldset>
         <legend>4. What is the current record still held by Joe DiMaggio that was set in 1941?</legend>
-        <label><input type="radio" name="q1" value="a"> Hitting streak for 56 consecutive games</label>
-        <label><input type="radio" name="q1" value="b"> Most stolen bases in a season</label>
-        <label><input type="radio" name="q1" value="c"> Best defensive player</label>
-        <label><input type="radio" name="q1" value="d"> Highest batting average in a season</label>
+        <label><input type="radio" name="q4" value="a"> Hitting streak for 56 consecutive games</label>
+        <label><input type="radio" name="q4" value="b"> Most stolen bases in a season</label>
+        <label><input type="radio" name="q4" value="c"> Best defensive player</label>
+        <label><input type="radio" name="q4" value="d"> Highest batting average in a season</label>
       </fieldset>
 
       <fieldset>
         <legend>5. Who was awarded the Gold Glove for their performance at center field?</legend>
-        <label><input type="radio" name="q1" value="a"> Aaron Judge</label>
-        <label><input type="radio" name="q1" value="b"> Derek Jeter</label>
-        <label><input type="radio" name="q1" value="c"> Mickey Mantle</label>
-        <label><input type="radio" name="q1" value="d"> Joe DiMaggio</label>
+        <label><input type="radio" name="q5" value="a"> Aaron Judge</label>
+        <label><input type="radio" name="q5" value="b"> Derek Jeter</label>
+        <label><input type="radio" name="q5" value="c"> Mickey Mantle</label>
+        <label><input type="radio" name="q5" value="d"> Joe DiMaggio</label>
       </fieldset>
 
-      <button type="submit">Check My Answers</button>
       <button type="reset">Try Again</button>
       
     </form>
 
-    <section id="quiz-result" aria-live="polite">
-      <h3>Your Results</h3>
-      <p>Answer all five questions, then click on "Check My Answers" to get your score.</p>
+    <section id="check answers">
+      <h3>Check Your Answers</h3>
+      <p>Answer all five questions and see the answer key below to count up your score!.</p>
+
+      <details>
+        <summary>Click here to reveal the correct answers</summary>
+
+        <ol>
+          <li>
+            <strong>27 World Series titles</strong>
+          </li>
+          <li>
+            <strong>Hit a 446-foot homerun</strong>
+          </li>
+          <li>
+            <strong>Babe Ruth</strong>
+          </li>
+          <li>
+            <strong>A hitting streak of 56 consecutive games</strong>
+          </li>
+          <li>
+           <strong>Mickey Mantle</strong>
+         </li>
+        </ol>
+      </details>
     </section>
+
+    <section id="quiz-rankings">
+      <h2>Your Yankees Fan Ranking</h2>
+      <p>Count your correct answers out of five to find your rank!</p>
+
+      <div class="rank-card">
+        <h3>Rookie</h3>
+        <p><strong>0-2 correct answers</strong></p>
+        <p>You're just getting started Rookie!</p>
+      </div>
+
+      <div class="rank-card">
+        <h3>All-Star</h3>
+        <p><strong>3-4 correct answers</strong></p>
+        <p>You know some Yankees baseball, you must be a big fan!</p>
+      </div>
+
+      <div class="rank-card">
+        <h3>Hall of Famer</h3>
+        <p><strong>5 correct answers</strong></p>
+        <p>Perfect Score! You are considered a Yankees legend yourself!</p>
+      </div>
+    </section>
+    
   </main>
 
   <footer>
