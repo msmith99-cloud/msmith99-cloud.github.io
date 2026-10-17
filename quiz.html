@@ -23,7 +23,7 @@
 
   <main>
     <h2>Yankees Trivia Quiz</h2>
-    <p>Consider yourself a Yankee fan? Answer these 5 questions and we'll see if you're a Rookie, 
+    <p>Consider yourself a Yankee fan? Answer these 7 questions and we'll see if you're a Rookie, 
     All-Star, or Hall of Famer!</p>
 
     <form id="quiz-form">
@@ -68,13 +68,29 @@
         <label><input type="radio" name="q5" value="d"> Joe DiMaggio</label>
       </fieldset>
 
+      <fieldset>
+        <legend>6. Who are the Yankees biggest rivals?</legend>
+        <label><input type="radio" name="q6" value="a"> Arizona Diamondbacks</label>
+        <label><input type="radio" name="q6" value="b"> Chicago Cubs</label>
+        <label><input type="radio" name="q6" value="c"> Chicago White Sox</label>
+        <label><input type="radio" name="q6" value="d"> Boston Red Sox</label>
+      </fieldset>
+
+      <fieldset>
+        <legend>7. What player was awarded the World Series Most Valuable Player?</legend>
+        <label><input type="radio" name="q7" value="a"> Derek Jeter</label>
+        <label><input type="radio" name="q7" value="b"> Mickey Mantle</label>
+        <label><input type="radio" name="q7" value="c"> Aaron Judge</label>
+        <label><input type="radio" name="q7" value="d"> Lou Gehrig</label>
+      </fieldset>
+
       <button type="reset">Try Again</button>
       
     </form>
 
     <section id="check answers">
       <h3>Check Your Answers</h3>
-      <p>Answer all five questions and see the answer key below to count up your score!.</p>
+      <p>Answer all seven questions and see the answer key below to count up your score!.</p>
 
       <details>
         <summary>Click here to reveal the correct answers</summary>
@@ -95,30 +111,36 @@
           <li>
            <strong>Mickey Mantle</strong>
          </li>
+          <li>
+           <strong>Boston Red Sox</strong>
+         </li>
+          <li>
+           <strong>Derek Jeter</strong>
+         </li>
         </ol>
       </details>
     </section>
 
     <section id="quiz-rankings">
       <h2>Your Yankees Fan Ranking</h2>
-      <p>Count your correct answers out of five to find your rank!</p>
+      <p>Count your correct answers out of seven to find your rank!</p>
 
       <div class="rank-card">
         <h3>Rookie</h3>
-        <p><strong>0-2 correct answers</strong></p>
+        <p><strong>0-3 correct answers</strong></p>
         <p>You're just getting started Rookie!</p>
       </div>
 
       <div class="rank-card">
         <h3>All-Star</h3>
-        <p><strong>3-4 correct answers</strong></p>
+        <p><strong>4-5 correct answers</strong></p>
         <p>You know some Yankees baseball, you must be a big fan!</p>
       </div>
 
       <div class="rank-card">
         <h3>Hall of Famer</h3>
-        <p><strong>5 correct answers</strong></p>
-        <p>Perfect Score! You are considered a Yankees legend yourself!</p>
+        <p><strong>6-7 correct answers</strong></p>
+        <p>True Yankees knowledge, you are considered a legend yourself!</p>
       </div>
     </section>
     
