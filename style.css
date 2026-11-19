@@ -7,23 +7,87 @@
 
 /* General styling for content */
 body {
-  font-family: Arial, sans-serif;
+  font-family: "Lora", serif;
   line-height: 1.6;
   color: #222;
-  background-color: #f5f5f5;
+  background-color: #f5f7fa;
 }
 
+/* Heading style rules */
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Playfair Display", serif;
+}
+
+/* Header style rules */
+header {
+  padding: 3rem 1rem;
+  text-align: center;
+  color: white;
+  background: #15395b;
+}
+
+header h1 {
+  margin: 0;
+}
+
+/* Navigation style rules */
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 1rem;
+  background: #fff;
+}
+
+/* Link style rules */
+a {
+  color: #005a9c;
+}
+
+a:focus-visible {
+  outline: 3px solid #c75b00;
+  outline-offset: 4px;
+}
+
+/* Main content style rules */
+main {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+/* Sections style rules */
+section {
+  margin-bottom: 1.5rem;
+  padding: 1.5rem;
+  background: white;
+  border-radius: 8px;
+}
+
+/* Images style rules */
 img {
   max-width: 100%;
   height: auto;
   display: block;
 }
 
+.small-image {
+  width: 100%;
+  max-width: 304px;
+  margin: 0 auto;
+}
+
+/* Footer style rules */
+footer {
+  padding: 1rem;
+  text-align: center;
+}
+
 /* Tablet Responsive Design */
 @media screen and (min-width: 768px) {
   main {
     width: 85%;
-    margin: auto;
   }
 }
 
@@ -31,6 +95,5 @@ img {
 @media screen and (min-width: 1024px) {
   main {
     max-width: 1200px;
-    margin: auto;
   }
 }
