@@ -97,3 +97,24 @@ footer {
     max-width: 1200px;
   }
 }
+
+/* Yankees Legends Grid */
+.content-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+/* Tablet Layout */
+@media screen and (min-width: 768px) {
+  .content-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Desktop Layout */
+@media screen and (min-width: 1024px) {
+  .content-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
