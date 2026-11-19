@@ -33,11 +33,14 @@ header h1 {
 /* Navigation style rules */
 nav {
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
   gap: 1.5rem;
   padding: 1rem;
   background: #fff;
+  text-align: center;
 }
 
 /* Link style rules */
