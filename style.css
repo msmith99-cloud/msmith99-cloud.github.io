@@ -139,3 +139,39 @@ th {
   background-color: #15395b;
   color: white;
 }
+
+/* Yankees Fan Form Styling */
+form {
+  margin-top: 1rem;
+}
+
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-family: "Lora", serif;
+  font-size: 1rem;
+}
+
+textarea {
+  resize: vertical;
+}
+
+button {
+  padding: 12px 20px;
+  background-color: #15395b;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: "Lora", serif;
+  font-size: 1rem;
+}
+
+button:hover {
+  background-color: #005a9c;
+}
