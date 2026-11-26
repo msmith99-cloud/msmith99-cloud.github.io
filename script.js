@@ -57,3 +57,17 @@ quizForm.addEventListener("submit", function(event) {
 quizForm.addEventListener("reset", function() {
   quizResult.textContent = "";
 });
+
+// Yankees Fan Favorite Form
+
+const fanForm = document.getElementById("fan-form");
+
+if (fanForm) {
+  fanForm.addEventListener("submit", function(event) {
+    event.preventDefault();
+
+    alert("Thank you for sharing your Yankees fan favorites!");
+
+    fanForm.reset();
+  });
+}
